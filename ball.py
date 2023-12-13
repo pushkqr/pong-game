@@ -61,4 +61,3 @@ class Ball(Turtle):
     def increaseSpeed(self):
         if self.speed > 0.015:
             self.speed -= 0.0025
-        print(self.speed)

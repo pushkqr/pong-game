@@ -7,15 +7,15 @@ import random
 from startscreen import StartScreen
 import winsound
 
-
 def quitGame():
     global is_over
     is_over = True
     ball.clear()
     r_paddle.clear()
     l_paddle.clear()
-    screen.clear()
+    scoreboard.gameOver()
     winsound.PlaySound(None, winsound.SND_PURGE)
+    screen.bye()
 
 
 def drawPartition(screen):
@@ -42,8 +42,9 @@ screen.bgcolor("cyan")
 screen.title("Pong")
 screen.tracer(0)
 winsound.PlaySound("soundtrack.wav", winsound.SND_ASYNC | winsound.SND_LOOP)
+
 start = StartScreen()
-start.launchGame()
+start.launchGame(screen)
 
 drawPartition(screen)
 scoreboard = Scoreboard()

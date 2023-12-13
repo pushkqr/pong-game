@@ -1,5 +1,5 @@
 from turtle import Turtle
-
+import time
 
 class Scoreboard(Turtle):
     def __init__(self):
@@ -32,4 +32,4 @@ class Scoreboard(Turtle):
         self.write("GAME OVER!", align="center", font=("Arial", 60, "bold"))
         self.goto(0, -100)
         self.write(f"{'Player 1 Wins!' if self.l_score > self.r_score else 'Player 2 Wins!'}", align="center", font=("Arial", 40, "italic"))
-
+        time.sleep(2)
