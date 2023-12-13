@@ -37,6 +37,6 @@ This Pong game is a simple implementation of the classic Pong arcade game. It fe
 
 **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/pong-game.git
+   git clone https://github.com/pushkqr/pong-game.git
    cd pong-game
    python main.py
