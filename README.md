@@ -32,3 +32,11 @@ This Pong game is a simple implementation of the classic Pong arcade game. It fe
 - The ball moves between the paddles, and each time it passes a paddle, the opposing player scores a point.
 - The game ends when one player reaches a score of 5 points.
 - A game-over screen is displayed, and the game can be restarted.
+
+## Compilation and Usage
+
+**Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/pong-game.git
+   cd pong-game
+   python main.py
